@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n=4;
+   int n=4;
     for(int i=0;i<n;i++){
-    
-      for (int j=0;j<=i;j++){
-        cout<<"*";
-
+      int num=0;
+      for(int j=i+1;j>0;j--){
+    num++;
+        cout<<j<< " ";
       }
-      cout<<endl;
+
+    cout<<endl;
     }
     return 0;
 }
