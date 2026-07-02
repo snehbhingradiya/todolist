@@ -1,62 +1,43 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n = 4;
-    for(int i = 0; i < n; i++){
+    int n;
+    cout << "enter the number of day: ";
+    cin>>n;
+    switch(n){
+        case 1:
+        cout<<"Monday";
+        break;
 
+         case 2:
+         cout<<"tuesday";
+        break;
 
+         case 3:
+         cout<<"wednesday";
+        break;
 
-        for(int j=0;j<i+1;j++){
-            cout<<"*";
-        }
-     
-        
-        for(int j=0;j<n-i-1;j++){
-            cout<<" ";
-        }
+         case 4:
+         cout<<"thursday";
+        break;
 
+         case 5:
+         cout<<"friday";
+        break;
 
-        for(int j=n-i-1;j>0;j--){
-            cout << " ";
-        }
+         case 6:
+         cout<<"saturday";
+        break;
 
+        case 7:
+        cout<<"Sunday";
+        break;
 
-        for (int j=i+1;j>0;j--){
-            cout<<"*";
-        }
-        cout<<endl;
-
-    } 
-       
-//hellow guys//
-     for(int i = 0; i < n; i++){
-
-
-
-        for(int j=0;j<n-i;j++){
-            cout<<"*";
-        }
-     
-        
-        for(int j=0;j<i;j++){
-            cout<<" ";
-        }
-
-
-        for(int j=i;j>0;j--){
-            cout << " ";
-        }
-
-
-        for (int j=n-i;j>0;j--){
-            cout<<"*";
-        }
-cout<<endl;
-    } 
-
-
-
-
-
-     return 0;
+         default:
+         cout<<"invalidday";
     }
+
+   
+      return 0;
+    
+}
